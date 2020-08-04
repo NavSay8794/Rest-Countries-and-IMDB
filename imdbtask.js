@@ -5,7 +5,7 @@ let getMovies = async () =>{
     try{
         let x = document.getElementById('movieName').value
         let apiKey = '700bb029'
-        let url = `http://www.omdbapi.com/?apikey=${apiKey}&t=${encodeURIComponent(x)}&r=json`
+        let url = `https://www.omdbapi.com/?apikey=${apiKey}&t=${encodeURIComponent(x)}&r=json`
 
         let response = await fetch(url)
         let movieData = await response.json()
